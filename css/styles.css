@@ -22,9 +22,126 @@
     --Pale-Blue: hsl(236, 100%, 87%);
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
 body {
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
-    background-color: var(--Dark-blue);
+    background-color: var(--Very-dark-blue);
     color: var(--White);
+}
+
+main {
+    width: 100%;
+    min-height: 95vh;
+    display: flex;
+}
+
+a {
+    font-size: 18px;
+    color: var(--Pale-Blue);
+    text-decoration: none;
+}
+
+a .active {
+    color: var(--White);
+}
+
+a:hover {
+    color: var(--White);
+}
+.container {
+    margin: auto;
+    width: 61.7rem;
+    height: 29rem;
+    display: grid;
+    gap: 1.6rem;
+    grid-auto-rows: 13.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    /*grid-template-columns: repeat(4, 1fr);*/
+}
+
+.reportfor {
+    grid-row: span 2;
+    height: 28.7rem;
+    width: 14rem;
+    background-color: var(--Dark-blue);
+    border-radius: 15px;
+}
+.reportfor div {
+    background-color: var(--Blue);
+    border-radius: 15px;
+    height: 19.6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.reportfor div img {
+    width: 78px;
+    height: 78px;
+    margin: 1.7rem 0 0 1.7rem;
+    border-radius: 50%;
+    border: 3px solid var(--White);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.reportfor div span {
+    font-size: 0.84rem;
+    color: var(--Pale-Blue);
+}
+
+.reportfor p {
+    padding: 0 1.7rem;
+}
+.reportfor div p {
+    font-size: 2.22rem;
+    font-weight: lighter;
+}
+
+.trackings {
+    width: 14rem;
+    height: 13.5rem;
+    /*background-color: var(--Light-red-work);*/
+    border-radius: 15px 15px 30px 30px;
+    display: flex;
+    align-items: end;
+    /*background-image: url('../images/icon-work.svg');*/
+    background-repeat: no-repeat;
+    background-position: top -0.7rem right 1rem;
+
+}
+
+
+.trackings div {
+    background-color: var(--Dark-blue);
+    width: 14rem;
+    height: 11.2rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.trackings div:nth-child(n) {
+    padding: 0 1.7rem;
+}
+.trackings div p {
+    display: flex;
+    justify-content: space-between;
+}
+.trackings div span:last-child {
+    font-size: 0.84rem;
+    color: var(--Pale-Blue);
+    margin-top: 0.5rem;
+}
+
+.trackings div span:nth-child(even) {
+    font-size: 3.11rem;
+    font-weight: lighter;
+    padding: 1rem 0 0 0;
 }
